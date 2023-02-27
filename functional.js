@@ -1,4 +1,4 @@
-	// PARTIE 1 
+	// PARTIE 1 (functional version)
 
 function parseTrip(trip) {
 	// split "coupe" la chaîne de caractères à chaque espace
