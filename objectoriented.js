@@ -53,8 +53,27 @@ console.log(arrTrips)
 
     // PARTIE 4
 
-console.log(arrTrips[0].isCompatible(arrTrips[3]))
+// console.log(arrTrips[0].isCompatible(arrTrips[3]))
+// console.log(arrTrips[3].isCompatible(arrTrips[0]))
 
+    // PARTIE 5
+
+//findCompatibilities(trips)
+
+function findCompatibilities(trips) {
+
+    let compatibleTrips = []
+    for(let i=0; i<trips.length; i++){
+        for(let j=i+1; j<trips.length; j++){
+            if(trips[i].isCompatible(trips[j])){
+                compatibleTrips.push([trips[i],trips[j]])
+            }
+        }
+        return compatibleTrips
+    }
+}
+    
+console.log(findCompatibilities(arrTrips))
 
 
 
